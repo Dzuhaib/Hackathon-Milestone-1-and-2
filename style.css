@@ -9,6 +9,9 @@ body {
     margin: auto;
     text-align: center;
 }
+.h3 {
+    color: black;
+}
 h1, p {
     text-align: center;
     color: black;
