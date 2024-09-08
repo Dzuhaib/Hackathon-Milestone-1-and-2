@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+h1, p {
+    text-align: center;
+}
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.description {
+    margin: 20px 0;
+}
+.buttons {
+    margin: 10px 0;
+}
+.buttons button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.buttons button:hover {
+    background-color: darkgoldenrod;
+}
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+.skill-box {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+    height: 150px; /* Ensure consistent height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill-box:hover {
+    background-color: lightgray;
+}
+.skill-box i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+section {
+    margin: 20px 0;
+}
+#experience {
+    display: none; /* Work Experience hidden initially */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left {
+        margin-bottom: 30px;
+    }
+
+    .hero-left .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero-right h1 {
+        font-size: 36px;
+    }
+
+    .hero-right h3 {
+        font-size: 16px;
+    }
+
+    .hero-right p {
+        font-size: 14px;
+    }
+
+    .hero-buttons .btn {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        grid-template-columns: 1fr; /* One column on small screens */
+    }
+    .skill-box {
+        height: auto; /* Adjust height for mobile to avoid overflow */
+    }
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero-left .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero-right h1 {
+        font-size: 28px;
+    }
+
+    .hero-right h3 {
+        font-size: 14px;
+    }
+
+    .hero-right p {
+        font-size: 12px;
+    }
+
+    .hero-buttons .btn {
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+}
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px;
+    /* background-color: #333; */
+    color: #fff;
+}
+
+.hero-left .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #888;
+}
+
+.hero-right {
+    max-width: 600px;
+}
+
+.hero-right h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-right h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-right p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-right: 15px;
+    background-color: yellow;
+    color: #333;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.hero-buttons .btn:hover {
+    background-color: darkgoldenrod;
+    border-color: darkgoldenrod;
+}
