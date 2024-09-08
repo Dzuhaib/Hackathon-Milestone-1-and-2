@@ -72,7 +72,7 @@ section {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .skills {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+        grid-template-columns: repeat(2, 1fr);
     }
     .hero {
         flex-direction: column;
@@ -110,10 +110,10 @@ section {
 
 @media (max-width: 480px) {
     .skills {
-        grid-template-columns: 1fr; /* One column on small screens */
+        grid-template-columns: 1fr; 
     }
     .skill-box {
-        height: auto; /* Adjust height for mobile to avoid overflow */
+        height: auto; 
     }
     .hero {
         padding: 30px 20px;
